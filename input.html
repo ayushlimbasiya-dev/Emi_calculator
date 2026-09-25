@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="styll.css">
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>EMI Calculator</h1>
+
+        <!-- Loan Amount -->
+        <div class="row">
+            <span>Loan amount</span>
+            <b>₹ <span id="amount">10,00,000</span></b>
+        </div>
+
+        <input type="range" id="loan"
+            min="100000"
+            max="5000000"
+            value="100000">
+
+        <!-- Interest -->
+        <div class="row">
+            <span>Rate of interest (p.a)</span>
+            <b><span id="rate">6.5</span> %</b>
+        </div>
+
+        <input type="range" id="interest"
+            min="1"
+            max="20"
+            step="0.1"
+            value="6.5">
+
+        <!-- Tenure -->
+        <div class="row">
+            <span>Loan tenure</span>
+            <b><span id="year">5</span> Yr</b>
+        </div>
+
+        <input type="range" id="tenure"
+            min="1"
+            max="30"
+            value="5">
+
+
+        <!-- Result -->
+        <div class="result">
+
+            <h2>Your EMI</h2>
+
+            <h3>₹ <span id="emi">19,568</span></h3>
+
+            <p>
+                Principal Amount:
+                ₹ <span id="principal">10,00,000</span>
+            </p>
+
+            <p>
+                Total Interest:
+                ₹ <span id="totalInterest">1,73,680</span>
+            </p>
+
+            <p>
+                Total Amount:
+                ₹ <span id="totalAmount">11,73,680</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="scritp.js"></script>
+
+</body>
+</html>
